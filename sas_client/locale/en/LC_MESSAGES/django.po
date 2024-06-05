@@ -1,0 +1,23 @@
+#: sas_client/client/templates/index.html:13
+msgid "create_sentiment_analysis_title"
+msgstr "Text to analyze:"
+
+#: sas_client/client/templates/index.html:20
+msgid "create_sentiment_analysis_submit"
+msgstr "Submit"
+
+#: sas_client/client/templates/index.html:27
+msgid "get_sentiment_analysis_title"
+msgstr "Results:"
+
+#: sas_client/client/templates/index.html:31
+msgid "get_sentiment_analysis_text"
+msgstr "Text"
+
+#: sas_client/client/templates/index.html:32
+msgid "get_sentiment_analysis_polarity"
+msgstr "Polarity"
+
+#: sas_client/client/templates/index.html:33
+msgid "get_sentiment_analysis_subjectivity"
+msgstr "Subjectivity"

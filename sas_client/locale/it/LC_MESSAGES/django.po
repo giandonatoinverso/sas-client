@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 19:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: sas_client/client/templates/index.html:13
+msgid "create_sentiment_analysis_title"
+msgstr "Testo da analizzare:"
+
+#: sas_client/client/templates/index.html:20
+msgid "create_sentiment_analysis_submit"
+msgstr "Invio"
+
+#: sas_client/client/templates/index.html:27
+msgid "get_sentiment_analysis_title"
+msgstr "Risultati:"
+
+#: sas_client/client/templates/index.html:31
+msgid "get_sentiment_analysis_text"
+msgstr "Testo"
+
+#: sas_client/client/templates/index.html:32
+msgid "get_sentiment_analysis_polarity"
+msgstr "Valenza"
+
+#: sas_client/client/templates/index.html:33
+msgid "get_sentiment_analysis_subjectivity"
+msgstr "Soggettività"

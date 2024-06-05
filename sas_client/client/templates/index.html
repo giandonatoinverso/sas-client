@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -9,27 +10,27 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h2>Write text here:</h2>
+                <h2>{% trans "create_sentiment_analysis_title" %}</h2>
                 <form method="POST" action="{% url 'create_sentiment_analysis' %}">
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="textInput"></label>
                         <textarea class="form-control" id="textInput" name="text" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Analizza</button>
+                    <button type="submit" class="btn btn-primary">{% trans "create_sentiment_analysis_submit" %}</button>
                 </form>
             </div>
         </div>
 
             <div class="row mt-5">
                 <div class="col-md-8 offset-md-2">
-                    <h2>Results:</h2>
+                    <h2>{%  trans "get_sentiment_analysis_title" %}</h2>
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Text</th>
-                                <th>Polarity</th>
-                                <th>Subjectivity</th>
+                                <th>{%  trans "get_sentiment_analysis_text" %}</th>
+                                <th>{%  trans "get_sentiment_analysis_polarity" %}</th>
+                                <th>{%  trans "get_sentiment_analysis_subjectivity" %}</th>
                             </tr>
                         </thead>
                         <tbody>
