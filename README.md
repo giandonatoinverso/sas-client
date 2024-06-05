@@ -61,7 +61,7 @@ task publish-docker
   - DNS Management
 
 - AWS ECS on Fargate
-  - Conatiner management for *sas-db*, *sas-backend-server* and *sas-client*
+  - Container management for *sas-db*, *sas-backend-server* and *sas-client*
 
 - AWS Elastic Load Balancer
   - Application Load Balancer (ALB) for distributing HTTP traffic between containers *sas-backend-server* and *sas-client*
