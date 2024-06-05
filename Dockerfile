@@ -4,9 +4,11 @@ WORKDIR /app
 RUN apk update && \
     apk add --no-cache \
         python3-dev \
-        build-base
+        build-base \
+        gettext
 COPY requirements.txt /app
 RUN pip3 install -r requirements.txt --no-cache-dir
 COPY ./sas_client /app
+RUN django-admin compilemessages
 ENTRYPOINT ["python3"]
 CMD ["manage.py", "runserver", "0.0.0.0:8000"]
