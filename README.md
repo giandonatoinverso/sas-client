@@ -2,7 +2,7 @@
 
 ## Description
 
-Sentiment Analysis is a simple Django web application that allows users to analyze the sentiment of a given text input. The app utilizes an AI-powered sentiment analysis model (Textblob) to determine whether the text is positive, negative, or neutral, as well as its level of subjectivity.
+Sentiment Analysis is a simple Django web application that allows users to analyze the sentiment of a given text input. The app utilizes an AI-powered sentiment analysis model ([TextBlob](https://github.com/sloria/TextBlob)) to determine whether the text is positive, negative, or neutral, as well as its level of subjectivity.
 
 ## Features
 
@@ -51,3 +51,21 @@ To build and publish the Docker image, run the following command:
 ```bash
 task publish-docker
 ```
+
+## Deployment on AWS
+
+- AWS VPC
+  - Dedicated VPC to ensure security and resource isolation
+
+- Amazon Route 53
+  - DNS Management
+
+- AWS ECS on Fargate
+  - Conatiner management for *sas-db*, *sas-backend-server* and *sas-client*
+
+- AWS Elastic Load Balancer
+  - Application Load Balancer (ALB) for distributing HTTP traffic between containers *sas-backend-server* and *sas-client*
+
+- AWS CloudWatch
+  - Log monitoring, alarm definition and container performance monitoring
+  
